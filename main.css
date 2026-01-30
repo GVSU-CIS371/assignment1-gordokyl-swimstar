@@ -1,7 +1,56 @@
-body,
-html {
-  /* height:100%; */
+body, html {
 
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(192, 170, 136);
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(250, 227, 192);
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: auto;
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+footer{
+  display: grid;
+  text-align: center;
+  background-color: rgb(250, 227, 192);
+}
+
+#app li{
+  list-style-type: none;
+}
+
+.store-item{
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.store-item span{
+  display: inline-flex;
+}
+
+.store-item img{
+  border: 2px dotted black;
+  height: 150px;
+  width: 150px;
 }
